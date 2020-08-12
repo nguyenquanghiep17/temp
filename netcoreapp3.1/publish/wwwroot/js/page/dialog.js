@@ -84,7 +84,7 @@ class DialogJS {
     * CreatedBy: NQHIEP (12/08/2020)
     * */
     customShortcutKey(e) {
-        e.preventDefault();
+        //e.preventDefault();
         var show = $(".form-dialog").css('display');
 
         if (e.ctrlKey && e.which == 83 && show == 'block') { // ctrl + s
