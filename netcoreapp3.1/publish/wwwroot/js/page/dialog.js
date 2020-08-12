@@ -87,7 +87,7 @@ class DialogJS {
         //e.preventDefault();
         var show = $(".form-dialog").css('display');
 
-        if (e.ctrlKey && e.which == 83 && show == 'block') { // ctrl + s
+        if (e.ctrlKey && e.which == 88 && show == 'block') { // ctrl + s
             $("#btnSave").trigger('click');
         } else if (e.ctrlKey && e.shiftKey && e.which == 83 && show == 'block') { // ctrl + shift + s
             $('#btnSaveAndAdd').trigger('click');
