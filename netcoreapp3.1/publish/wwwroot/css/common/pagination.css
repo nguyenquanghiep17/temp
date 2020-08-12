@@ -1,0 +1,78 @@
+﻿.pagination {
+    height: 30px;
+    width: calc(100% - 2px);
+    border: 1px solid #ccc;
+    position: absolute;
+    bottom: -3px;
+    display: flex;
+}
+
+    .pagination .pagination-left {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+        .pagination .pagination-left > * {
+            margin-left: 10px;
+        }
+
+
+
+    .pagination .pagination-right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+#customerNumber {
+    height: 28px;
+}
+
+#currentPage {
+    height: 21px;
+    width: 28px;
+}
+
+.page-first {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/grid/page-first.png');
+    background-position: 0 0 !important;
+    cursor: pointer;
+}
+
+.page-prev {
+    width: 9px;
+    height: 16px;
+    background-image: url('/contents/images/grid/page-prev.png');
+    background-position: -3px 0 !important;
+    cursor: pointer;
+}
+
+.page-last {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/grid/page-last.png');
+    background-position: 0 0 !important;
+    cursor: pointer;
+}
+
+.page-next {
+    width: 9px;
+    height: 16px;
+    background-image: url('/contents/images/grid/page-next.png');
+    background-position: -3px 0 !important;
+    cursor: pointer;
+}
+
+.refresh {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/grid/refresh.png');
+    background-position: 0 0 !important;
+    cursor: pointer;
+}

@@ -1,0 +1,82 @@
+﻿.container {
+    width: 100%;
+    height: calc(100% - 55px);
+    display: flex;
+}
+
+.container .content {
+    height: calc(100% - 16px);
+    width: calc(100% - 230px);
+    padding: 8px;
+}
+
+    .container .content .content-header {
+        display: flex;
+    }
+
+    .container .content .content-header-left {
+        width: 50%;
+    }
+
+    .container .content .content-header-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+        .container .content .content-header-right .default-setting {
+            cursor: pointer;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 8px;
+        }
+
+        .container .content .content-header-right .feedback {
+            cursor: pointer;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 1px solid #ccc;
+            margin-left: 8px;
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+            .container .content .content-header-right .feedback .feedback-icon {
+                margin-top: 2px;
+                padding-right: 5px;
+                width: 16px;
+                height: 13px;
+                background-image: url('/contents/images/viewEmail.png');
+                background-position: 0 -2px !important;
+                background-repeat: no-repeat;
+            }
+
+    .container .content .content-header .root {
+        font-size: 26px;
+        display: inline;
+    }
+
+    .container .content .content-header .separate {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .container .content .content-header .child {
+        display: inline;
+        color: #3f8cbf;
+    }
+
+.content .content-header {
+    height: 40px;
+}
+
+.content .content-body {
+    height: calc(100% - 42px);
+    position: relative;
+}

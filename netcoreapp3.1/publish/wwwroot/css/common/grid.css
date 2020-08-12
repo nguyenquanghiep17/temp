@@ -1,0 +1,74 @@
+﻿
+
+
+.grid {
+    height: calc(100% - 59px);
+    
+    border: 1px solid #ccc;
+    border-top: none;
+    overflow-y: scroll;
+    /*overflow-x: scroll;*/
+}
+
+table {
+    border-collapse: collapse;
+    border-color: #ccc;
+    width: calc(100%);
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+    table thead {
+        border-top: none;
+        background-color: #ededed !important;
+    }
+
+        table thead th {
+            font-weight: normal;
+            border: 1px solid #dddddd;
+        }
+
+    table tr td {
+        padding: 2px 4px;
+        border: 1px solid #dddddd;
+    }
+
+        table tr td .disableCheckbox {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+
+    table tbody tr:hover {
+        background-color: #bfd1fe;
+        cursor: pointer
+    }
+
+    table tbody tr.row-selected {
+        background-color: #a4befc;
+    }
+
+
+    .align-center {
+        text-align: center;
+    }
+
+.align-right {
+    text-align: right;
+}
+
+
+#loading {
+    height: calc(100% - 59px);
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    background: url('/contents/images/loadmask/loading.gif') no-repeat center #ffffff;
+    background-size: 16px;
+    /*overflow-x: scroll;*/
+}
+

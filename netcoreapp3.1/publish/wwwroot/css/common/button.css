@@ -1,0 +1,100 @@
+﻿﻿button .btn-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/iconsprite.png');
+    background-position: 0 -2648px !important;
+}
+
+button .btn-icon.btn-icon-add {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/iconsprite.png');
+    background-position: 0 -2648px !important;
+}
+
+button .btn-icon.btn-icon-duplicate {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/iconsprite.png');
+    background-position: -1px -1888px !important;
+}
+
+button .btn-icon.btn-icon-edit {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/iconsprite.png');
+    background-position: 0 -1872px !important;
+}
+
+button .btn-icon.btn-icon-delete {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/iconsprite.png');
+    background-position: -1px -2048px !important;
+}
+
+button .btn-icon.btn-icon-refresh {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/iconsprite.png');
+    background-position: 0 -2586px !important;
+}
+
+button .btn-icon.btn-icon-import {
+    width: 13px;
+    height: 12px;
+    background-image: url('/contents/images/Import16.png');
+    background-position: -2px -2px !important;
+}
+
+button .btn-icon.btn-icon-export {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/excel_97_24.png');
+    background-position: 0 0 !important;
+}
+
+button .btn-icon.btn-icon-merge-user {
+    width: 19px;
+    height: 14px;
+    background-image: url('/contents/images/ic_GopKhachHang.png');
+    background-position: 0 0 !important;
+}
+
+
+button .btn-icon.btn-icon-help {
+    width: 16px;
+    height: 16px;
+    background-image: url('/contents/images/iconsprite.png');
+    background-position: 0 -1600px !important;
+}
+
+button .btn-icon.btn-icon-save {
+    width: 15px;
+    height: 14px;
+    background-image: url('/contents/images/Save16.png');
+    background-position: 0 0 !important;
+}
+
+button .btn-icon.btn-icon-save-add {
+    width: 17px;
+    height: 17px;
+    background-image: url('/contents/images/SaveAdd16.png');
+    background-position: 0 0 !important;
+}
+
+button .btn-icon.btn-icon-cancel {
+    width: 15px;
+    height: 15px;
+    background-image: url('/contents/images/Disable16.png');
+    background-position: 0 0 !important;
+}
+
+button .btn-text {
+    margin-left: 4px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}

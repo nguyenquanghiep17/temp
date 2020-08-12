@@ -1,0 +1,187 @@
+﻿ <!--form hiển thị nhập liệu﻿-->
+
+<div class="dialog-model"></div>
+<div class="dialog">
+    <div class="dialog-title-bar">
+        <div class="title">Thông tin nhân viên</div>
+        <div class="btn-close" id="btnCloseHeader">x</div>
+    </div>
+    <div class="dialog-body">
+        <div class="dialog-body-content">
+            <div class="common-info">
+                <div class="content-title"> Thông tin chung </div>
+                <div class="common-info-content">
+                    <div class="common-info-content-top">
+                        <div class="form-content">
+                            <div class="row">
+                                <div class="label">
+                                    <label>Mã nhân viên <span>(*)</span></label>
+                                </div>
+                                <div class="input">
+                                    <input type="text" value="" id="txtEmployeeCode"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="label">
+                                    <label>Tên nhân viên <span>(*)</span></label>
+                                </div>
+                                <div class="input">
+                                    <input type="text" value="" id="txtEmployeeName"/>
+                                </div>
+                            </div>
+                            <div class="row-speical">
+                                <div class="label">
+                                    <label>Ngày sinh</label>
+                                </div>
+                                <div class="input">
+                                    <input type="date" value="" class="date" id="birthday"/>
+                                </div>
+                                <div class="label-2">
+                                    <label>Giới tính</label>
+                                </div>
+                                <div class="input">
+                                    <select id="sex">
+                                        <option value="Nam">Nam</option>
+                                        <option value="Nữ">Nữ</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="label">
+                                    <label>Email <span>(*)</span></label>
+                                </div>
+                                <div class="input">
+                                    <input type="text" value="" id="txtEmail"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="label">
+                                    <label>ĐT di động <span>(*)</span></label>
+                                </div>
+                                <div class="input">
+                                    <input type="text" value="" id="txtPhoneNumber"/>
+                                </div>
+                            </div>
+                            <div class="row-speical">
+                                <div class="label">
+                                    <label>Số CMT/HC</label>
+                                </div>
+                                <div class="input">
+                                    <input type="text" value="" />
+                                </div>
+                                <div class="label-2">
+                                    <label>Ngày cấp</label>
+                                </div>
+                                <div class="input">
+                                    <input type="date" name="name" value="" id="dateOfIssue"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="/contents/images/avatar.png" alt="Avatar" class="avatar" id="avatar"/>
+                            <div id="changeAvatar">...</div>
+                            <div id="removeAvatar">x</div>
+                            <div class="text">Chỉ được upload tệp <b>.jpg, .jpeg, .png, .gif</b></div>
+                            <input type="file" name="name" value="" id="upload-avatar" style="display:none"/>
+                        </div>
+                    </div>
+
+                    <div class="row last-row">
+                        <div class="label">
+                            <label>Nới cấp CMND</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="name" value="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-info">
+                <div class="content-title"> Thông tin công việc </div>
+                <div class="work-info-content">
+                    <div class="row">
+                        <div class="label">
+                            <label>Vị trí</label>
+                        </div>
+                        <div class="input">
+                            <select class="select-long" id="position">
+                                <option value="Nhân viên">Nhân viên</option>
+                                <option value="Trưởng phòng">Trưởng phòng</option>
+                                <option value="Giám đốc">Giám đốc</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label">
+                            <label>Phòng ban</label>
+                        </div>
+                        <div class="input">
+                            <select class="select-long" id="department">
+                                <option value="Phòng nghiên cứu">Phòng nghiên cứu</option>
+                                <option value="Khối sản xuất">Khối sản xuất</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row-speical">
+                        <div class="label">
+                            <label>Mã số thuế cá nhân</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="name" value="" />
+                        </div>
+                        <div class="label-2">
+                            <label>Mức lương</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" value="" class="salary" id="txtSalary"/>
+                        </div>
+
+                    </div>
+                    <div class="row-speical">
+                        <div class="label">
+                            <label>Ngày gia nhập</label>
+                        </div>
+                        <div class="input">
+                            <input type="date" name="name" value="" class="date"/>
+                        </div>
+                        <div class="label-2">
+                            <label>Tình trạng</label>
+                        </div>
+                        <div class="input">
+                            <select class="select-short" id="jobStatus">
+                                <option value="Đang làm việc">Đang làm việc</option>
+                                <option value="Đã nghỉ việc">Đã nghỉ việc</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="dialog-body-footer">
+            <div class="footer-left">
+                <button>
+                    <div class="btn-icon btn-icon-help"></div>
+                    <div class="btn-text">Giúp</div>
+                </button>
+            </div>
+            <div class="footer-right">
+                <button id="btnSave">
+                    <div class="btn-icon btn-icon-save"></div>
+                    <div class="btn-text">Cất</div>
+                </button>
+                <button id="btnSaveAndAdd">
+                    <div class="btn-icon btn-icon-save-add"></div>
+                    <div class="btn-text">Cất & Thêm</div>
+                </button>
+                <button id="btnClose">
+                    <div class="btn-icon btn-icon-cancel"></div>
+                    <div class="btn-text">Hủy bỏ</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

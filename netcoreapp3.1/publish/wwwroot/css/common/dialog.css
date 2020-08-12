@@ -1,0 +1,341 @@
+﻿﻿.form-dialog {
+    position: absolute;
+}
+
+.dialog-model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.4;
+}
+
+.dialog {
+    position: fixed;
+    width: 720px;
+    height: 510px;
+    top: calc(50% - 255px);
+    left: calc(50% - 360px);
+    border-radius: 5px;
+    border: 5px solid #0072bc;
+}
+
+
+.dialog .dialog-title-bar {
+    height: 30px;
+    width: 100%;
+    background-color: #0072bc;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialog .dialog-title-bar .title {
+    padding-left: 4px;
+}
+
+.dialog .dialog-title-bar .btn-close {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    color: #0072bc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 13px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dialog .dialog-body {
+    background-color: #ffffff;
+    height: calc(100% - 50px);
+    padding: 10px;
+}
+
+.dialog .dialog-body .dialog-body-content {
+    height: 92%;
+    width: 100%;
+}
+
+.content-title {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+    .dialog .dialog-body .dialog-body-content .common-info-content-top  {
+        display: flex;
+    }
+    label, input {
+        display: block;
+    }
+.dialog .dialog-body .dialog-body-content .common-info-content-top .form-content {
+    width: 570px;
+}
+
+    .dialog .dialog-body .dialog-body-content  .row {
+        display: flex;
+    }
+
+.dialog .dialog-body .dialog-body-content .row .label{
+    width: 139px;
+}
+
+
+        .dialog .dialog-body .dialog-body-content .row input {
+            width: 552px;
+        }
+
+.date {
+    width: 152px;
+}
+
+#sex {
+    width: 151px;
+}
+
+#dateOfIssue {
+    width: 126px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.dialog .dialog-body .dialog-body-content  .row {
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+.dialog .dialog-body .dialog-body-content .last-row {
+    padding-bottom: 10px;
+}
+
+    .dialog .dialog-body .dialog-body-content .common-info-content-top .form-content .row input{
+        width: 410px;
+    }
+
+.dialog .dialog-body .dialog-body-content  .row-speical {
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+    .dialog .dialog-body .dialog-body-content  .label {
+        width: 139px;
+    }
+
+    .dialog .dialog-body .dialog-body-content  .label-2 {
+        width: 80px;
+        padding-left: 10px;
+    }
+
+    input {
+        height: 21px;
+    }
+
+    input[type="date"] {
+        height: 23px;
+    }
+
+    select {
+        height: 27px;
+    }
+
+.salary {
+    width: 285px;
+}
+
+.work-info-content .select-long {
+    width: 560px;
+}
+
+.work-info-content .select-short {
+    width: 293px;
+}
+
+
+.dialog .dialog-body .dialog-body-content .common-info-content-top .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+}
+.dialog .dialog-body .dialog-body-content .common-info-content-top .text {
+    text-align: center;
+    padding-left: 8px;
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+        .dialog .dialog-body .dialog-body-footer {
+            height: 8%;
+            display: flex;
+        }
+
+.dialog .dialog-body .dialog-body-footer .footer-left {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.dialog .dialog-body .dialog-body-footer .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 70%;
+}
+
+.dialog .dialog-body .dialog-body-footer button {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dialog .dialog-body .dialog-body-footer .footer-right button {
+    margin-left: 10px;
+}
+
+input:focus, textarea:focus {
+    outline-color: #5caf10;
+}
+
+span {
+    color: #f54242;
+}
+
+
+
+input[type='date']{
+
+    padding-left: 20px;
+}
+
+
+.cancel-dialog .cancel-dialog-body {
+    background-color: #ffffff;
+    height: calc(100% - 50px);
+    padding: 10px;
+}
+
+    .cancel-dialog .cancel-dialog-body .cancel-dialog-body-content {
+        height: 88%;
+        width: 100%;
+    }
+
+    .cancel-dialog .cancel-dialog-body .cancel-dialog-body-footer {
+        height: 12%;
+        display: flex;
+    }
+
+        .cancel-dialog .cancel-dialog-body .cancel-dialog-body-footer .cancel-footer-left {
+            width: 30%;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .cancel-dialog .cancel-dialog-body .cancel-dialog-body-footer .cancel-footer-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 70%;
+        }
+
+
+        .cancel-dialog .cancel-dialog-body .cancel-dialog-body-footer button {
+            display: flex;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .cancel-dialog .cancel-dialog-body .cancel-dialog-body-footer .cancel-footer-right button {
+            margin-left: 10px;
+        }
+
+.cancel-dialog .cancel-dialog-title-bar .btn-close {
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    color: #0072bc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 13px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cancel-dialog .cancel-dialog-title-bar {
+    height: 30px;
+    width: 100%;
+    background-color: #0072bc !important;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cancel-dialog {
+    position: fixed;
+    width: 500px;
+    height: 150px;
+    top: calc(50% - 75px);
+    left: calc(50% - 250px);
+    border-radius: 5px;
+    border: 5px solid #0072bc;
+}
+
+
+    .cancel-dialog .cancel-dialog-body .delete-dialog-body-content {
+        height: 88%;
+        width: 100%;
+    }
+
+    .cancel-dialog .cancel-dialog-body .close-dialog-body-content {
+        height: 88%;
+        width: 100%;
+    }
+
+#btnAgree{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#changeAvatar {
+    position: absolute;
+    top: 110px;
+    left: 35px;
+    background-color: #fff;
+    height: 20px;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#removeAvatar {
+    position: absolute;
+    background-color: #e2e2e5;
+    right: 25px;
+    top: 110px;
+    color: red;
+    font-weight: bold;
+    height: 20px;
+    width: 35px;
+    text-align: center;
+    cursor: pointer;
+}
