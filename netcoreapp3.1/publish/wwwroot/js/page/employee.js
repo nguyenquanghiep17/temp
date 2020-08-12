@@ -19,6 +19,7 @@ class EmployeeJS {
     currentPage = 1;
     interval = null;
     totalEmployee = 0;
+    arrayEmployeeID = [];
     avatar = null;
     constructor() {
         try {
@@ -49,8 +50,9 @@ class EmployeeJS {
         $("#refresh").on("click", this.refresh.bind(this));
         $("#currentPage").on("keyup", this.changeCurrentPage.bind(this));
 
-
     }
+
+
 
 
     ///**
@@ -227,19 +229,37 @@ class EmployeeJS {
 
     deleteCustomer() {
 
+        let deleteMode = $(".row-selected").length > 1 ? 2 : 1;
 
+        if (deleteMode == 1) {
+            $.ajax({
+                url: "/api/Employees/" + this.employeeID,
+                method: "DELETE",
+            }).done((res) => {
+                $("#btnEdit").attr('disabled', 'disabled');
+                $("#btnDuplicate").attr('disabled', 'disabled');
+                $("#btnDelete").attr('disabled', 'disabled');
+                this.refresh();
+            }).fail(function (res) {
+                console.log(res);
+            })
+        } else if (deleteMode == 2) {
 
-        $.ajax({
-            url: "/api/Employees/" + this.employeeID,
-            method: "DELETE",
-        }).done((res) => {
-            $("#btnEdit").attr('disabled', 'disabled');
-            $("#btnDuplicate").attr('disabled', 'disabled');
-            $("#btnDelete").attr('disabled', 'disabled');
-            this.refresh();
-        }).fail(function (res) {
-            console.log(res);
-        })
+            console.log(this.arrayEmployeeID.toString());
+            //if (deleteMode == 1) {
+            //    $.ajax({
+            //        url: "/api/Employees/" + this.employeeID,
+            //        method: "DELETE",
+            //    }).done((res) => {
+            //        $("#btnEdit").attr('disabled', 'disabled');
+            //        $("#btnDuplicate").attr('disabled', 'disabled');
+            //        $("#btnDelete").attr('disabled', 'disabled');
+            //        this.refresh();
+            //    }).fail(function (res) {
+            //        console.log(res);
+            //})
+        }
+
     }
 
 
@@ -248,13 +268,41 @@ class EmployeeJS {
     * CreatedBy: NQHIEP (10/08/2020)
     * */
     rowOnClick(sender) {
-        this.employeeID = $(sender.currentTarget).data('id');
-        sender.currentTarget.classList.add("row-selected");
-        $(sender.currentTarget).siblings().removeClass("row-selected");
-        $("#btnEdit").removeAttr('disabled');
-        $("#btnDuplicate").removeAttr('disabled');
-        $("#btnDelete").removeAttr('disabled');
+
+        if (!sender.ctrlKey) {
+            this.employeeID = $(sender.currentTarget).data('id');
+            sender.currentTarget.classList.add("row-selected");
+            $(sender.currentTarget).siblings().removeClass("row-selected");
+            $("#btnEdit").removeAttr('disabled');
+            $("#btnDuplicate").removeAttr('disabled');
+            $("#btnDelete").removeAttr('disabled');
+        } else if (sender.ctrlKey) {
+            $("#btnEdit").attr('disabled', 'disabled');
+            $("#btnDuplicate").attr('disabled', 'disabled');
+            $("#btnDelete").removeAttr('disabled');
+            let isClicked = $(sender.currentTarget).attr("class") == "row-selected";
+            if (!isClicked) {
+                sender.currentTarget.classList.add("row-selected");
+            } else if (isClicked) {
+                $(sender.currentTarget).removeClass("row-selected");
+            }   
+            this.getIdOfRowSelected();
+        }
+
     }
+
+    /**
+    * lấy tất cả id của những hàng được chọn
+    * CreatedBy: NQHIEP (12/08/2020)
+    * */
+
+    getIdOfRowSelected() {
+        this.arrayEmployeeID = [];
+        $(".row-selected").each((index, item) => {
+            this.arrayEmployeeID.push($(item).data('id'));
+        })
+    }
+
 
     /**
     * Hàm lấy tổng số lượng khách hàng
